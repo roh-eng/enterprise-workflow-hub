@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="d5e0ceb7932403105097fa845d03d6a3" label="Project" max_length="40" name="x_2039551_enterp_0_project" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Deadline" max_length="40" name="u_glide_date_5" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Client Name" max_length="40" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Project Name" max_length="40" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_choice_9" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Completed" sequence="5" value="completed"/>
+                <element inactive_on_update="false" label="Deployment" sequence="3" value="deployment"/>
+                <element inactive_on_update="false" label="Development" sequence="1" value="development"/>
+                <element inactive_on_update="false" label="Planning" sequence="0" value="planning"/>
+                <element inactive_on_update="false" label="Testing" sequence="2" value="testing"/>
+                <element inactive_on_update="false" label="Monitoring" sequence="4" value="monitoring"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Project Description" max_length="40" name="u_string_3" type="string"/>
+        <element label="Total Teams" max_length="40" name="u_integer_10" type="integer"/>
+        <element attributes="encode_utf8=false" label="Scrum Master" max_length="32" name="u_reference_8" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Risk Level" max_length="40" name="u_choice_7" type="string">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+                <element inactive_on_update="false" label="Critical" sequence="3" value="critical"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+            </choice>
+        </element>
+        <element label="Budget" max_length="15" name="u_decimal_6" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" max_length="40" name="u_glide_date_4" type="glide_date"/>
+        <index name="index">
+            <element name="u_reference_8"/>
+        </index>
+    </element>
+</database>

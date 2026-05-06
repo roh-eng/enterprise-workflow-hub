@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="de78c6f7936403105097fa845d03d6ae" label="AI BOTTLENECK MONITORING" max_length="40" name="x_2039551_enterp_0_ai_bottleneck_monitoring" type="collection">
+        <element label="Alert Sent" max_length="40" name="u_boolean_7" type="boolean"/>
+        <element label="Escalated" max_length="40" name="u_boolean_8" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Suggested Action" max_length="40" name="u_string_6" type="string"/>
+        <element label="Predicted Delay" max_length="40" name="u_integer_3" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="resource bottleneck" label="Risk Type" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Resource Bottleneck" sequence="3" value="resource bottleneck"/>
+                <element inactive_on_update="false" label="Deployment Failure" sequence="1" value="deployment failure"/>
+                <element inactive_on_update="false" label="Testing Delay" sequence="0" value="testing delay"/>
+                <element inactive_on_update="false" label="Approval Delay" sequence="4" value="approval delay"/>
+                <element inactive_on_update="false" label="Build Failure" sequence="2" value="build failure"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Affected Team" max_length="32" name="u_reference_4" reference="sys_user_group" type="reference"/>
+        <element attributes="encode_utf8=false" label="Workflow Task" max_length="32" name="u_reference_1" reference="x_2039551_enterp_0_workflow_task" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Severity" max_length="40" name="u_choice_5" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Critical" sequence="3" value="critical"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_reference_1"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_4"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>WorkFlow Task</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>WorkFlow Task</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">4fe4d024f54003100a22c0b3dfa15116</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 10:59:53</sys_created_on>
+        <sys_id>4d8406bf932403105097fa845d03d63e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WorkFlow Task</sys_name>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name>sys_wizard_answer_4d8406bf932403105097fa845d03d63e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 10:59:53</sys_updated_on>
+        <table/>
+        <target_url>x_2039551_enterp_0_workflow_task.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

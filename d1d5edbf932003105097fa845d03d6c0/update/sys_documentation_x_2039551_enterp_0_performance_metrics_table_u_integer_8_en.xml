@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_integer_8" label="Credits Earned" language="en" table="x_2039551_enterp_0_performance_metrics_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_integer_8</element>
+            <help/>
+            <hint/>
+            <label>Credits Earned</label>
+            <language>en</language>
+            <name>x_2039551_enterp_0_performance_metrics_table</name>
+            <plural>Credits Earned</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-06 11:17:09</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Credits Earned</sys_name>
+            <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+            <sys_update_name>sys_documentation_x_2039551_enterp_0_performance_metrics_table_u_integer_8_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-06 11:17:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

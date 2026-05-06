@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="baf639b393e003105097fa845d03d6de" extends="task" label="ONBOARDING TASK" max_length="40" name="x_2039551_enterp_0_onboarding_task" type="collection">
+        <element label="Completion Percentage" max_length="40" name="completion_percentage" type="integer"/>
+        <element label="Employee" max_length="32" name="employee" reference="x_2039551_enterp_0_employee" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Approval Status" max_length="40" name="u_choice_6" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+                <element inactive_on_update="false" label="Approved" sequence="1" value="approved"/>
+            </choice>
+        </element>
+        <element label="Required Approval" max_length="40" name="u_boolean_5" type="boolean"/>
+        <element choice="1" label="SLA Status" max_length="40" name="sla_status" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="AI Recommendation" max_length="40" name="u_string_8" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Escalation Level" max_length="40" name="u_choice_9" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Medium" sequence="0" value="medium"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+                <element inactive_on_update="false" label="Low" sequence="3" value="low"/>
+                <element inactive_on_update="false" label="Critical" sequence="1" value="critical"/>
+            </choice>
+        </element>
+        <element label="Task Name" max_length="40" name="task_name" type="string"/>
+        <element label="Completion Percentage" max_length="40" name="u_integer_4" type="integer"/>
+        <element label="Auto Generated" max_length="40" name="u_boolean_7" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Employee" max_length="32" name="u_reference_1" reference="x_2039551_enterp_0_employee" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="SLA Status" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Breached" sequence="2" value="breached"/>
+                <element inactive_on_update="false" label="Within SLA" sequence="0" value="within sla"/>
+                <element inactive_on_update="false" label="Near Breach" sequence="1" value="near breach"/>
+            </choice>
+        </element>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Task Category" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Laptop Setup" sequence="0" value="laptop setup"/>
+                <element inactive_on_update="false" label="ID Card Setup" sequence="2" value="id card setup"/>
+                <element inactive_on_update="false" label="HR Documentation" sequence="4" value="hr documentation"/>
+                <element inactive_on_update="false" label="Desk Setup" sequence="3" value="desk setup"/>
+                <element inactive_on_update="false" label="Email Configuration" sequence="5" value="email configuration"/>
+                <element inactive_on_update="false" label="VPN Access" sequence="1" value="vpn access"/>
+            </choice>
+        </element>
+    </element>
+</database>

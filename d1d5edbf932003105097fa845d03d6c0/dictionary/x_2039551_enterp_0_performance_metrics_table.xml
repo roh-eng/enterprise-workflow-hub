@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="294686b3936403105097fa845d03d6bd" label="Performance Metrics Table" max_length="40" name="x_2039551_enterp_0_performance_metrics_table" type="collection">
+        <element label="Total Tasks" max_length="40" name="u_integer_3" type="integer"/>
+        <element label="Delayed Tasks" max_length="40" name="u_integer_4" type="integer"/>
+        <element label="Performance Score" max_length="15" name="u_decimal_7" type="decimal"/>
+        <element label="Ranking" max_length="40" name="u_integer_9" type="integer"/>
+        <element label="Credits Earned" max_length="40" name="u_integer_8" type="integer"/>
+        <element attributes="encode_utf8=false" label="Team" max_length="32" name="u_reference_2" reference="sys_user_group" type="reference"/>
+        <element label="Task Within SLA" max_length="40" name="u_integer_5" type="integer"/>
+        <element label="Delay Ratio" max_length="15" name="u_decimal_6" type="decimal"/>
+        <element attributes="encode_utf8=false" label="Employee" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_reference_1"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_2"/>
+        </index>
+    </element>
+</database>

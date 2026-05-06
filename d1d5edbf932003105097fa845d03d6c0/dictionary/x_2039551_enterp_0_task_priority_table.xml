@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="e5b40ebf932403105097fa845d03d633" label="Task Priority Table" max_length="40" name="x_2039551_enterp_0_task_priority_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Recommended Action" max_length="40" name="u_string_9" type="string"/>
+        <element label="Total Users" max_length="40" name="u_integer_2" type="integer"/>
+        <element attributes="encode_utf8=false" label="Task" max_length="32" name="u_reference_1" reference="x_2039551_enterp_0_workflow_task" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Priority Level" max_length="40" name="u_choice_8" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Critical" sequence="3" value="critical"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+            </choice>
+        </element>
+        <element label="Rollback Count" max_length="40" name="u_integer_5" type="integer"/>
+        <element label="Users Affected" max_length="40" name="u_integer_3" type="integer"/>
+        <element label="Rollback Weight" max_length="40" name="u_integer_4" type="integer"/>
+        <element label="Business Impact" max_length="15" name="u_decimal_7" type="decimal"/>
+        <element label="Priority Score" max_length="15" name="u_decimal_6" type="decimal"/>
+        <index name="index">
+            <element name="u_reference_1"/>
+        </index>
+    </element>
+</database>

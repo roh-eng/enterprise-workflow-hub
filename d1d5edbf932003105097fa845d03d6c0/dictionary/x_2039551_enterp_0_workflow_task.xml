@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="2644ca7f932403105097fa845d03d6b5" extends="task" label="WorkFlow Task" max_length="40" name="x_2039551_enterp_0_workflow_task" type="collection">
+        <element label="Rollback Count" max_length="40" name="u_integer_6" type="integer"/>
+        <element attributes="encode_utf8=false" label="Project" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Risk Prediction" max_length="40" name="u_choice_10" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Medium Risk" sequence="1" value="medium risk"/>
+                <element inactive_on_update="false" label="High Risk" sequence="2" value="high risk"/>
+                <element inactive_on_update="false" label="Critical Risk" sequence="3" value="critical risk"/>
+                <element inactive_on_update="false" label="Low Risk" sequence="0" value="low risk"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Dependency Status" max_length="40" name="u_choice_11" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Blocked" sequence="1" value="blocked"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="Waiting" sequence="0" value="waiting"/>
+            </choice>
+        </element>
+        <element label="Delay Percentage" max_length="15" name="u_decimal_9" type="decimal"/>
+        <element label="Priority Score" max_length="15" name="u_decimal_8" type="decimal"/>
+        <element label="Users Affected" max_length="40" name="u_integer_4" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="WorkFlow Stage" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Coding" sequence="1" value="coding"/>
+                <element inactive_on_update="false" label="Deployment" sequence="5" value="deployment"/>
+                <element inactive_on_update="false" label="Building" sequence="2" value="building"/>
+                <element inactive_on_update="false" label="Monitoring" sequence="6" value="monitoring"/>
+                <element inactive_on_update="false" label="Planning" sequence="0" value="planning"/>
+                <element inactive_on_update="false" label="Testing" sequence="3" value="testing"/>
+                <element inactive_on_update="false" label="Release" sequence="7" value="release"/>
+                <element inactive_on_update="false" label="Security Review" sequence="4" value="security review"/>
+            </choice>
+        </element>
+        <element label="Total Users" max_length="40" name="u_integer_5" type="integer"/>
+        <element label="Rollback Weight" max_length="40" name="u_integer_7" type="integer"/>
+        <element label="SLA Breach" max_length="40" name="u_boolean_12" type="boolean"/>
+    </element>
+</database>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New Section" section_id="2048f57793e003105097fa845d03d694" sys_domain="global" table="x_2039551_enterp_0_cafeteria_menu" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_string_3</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-06 10:06:21</sys_created_on>
+            <sys_id>0d48397793e003105097fa845d03d6d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_2039551_enterp_0_cafeteria_menu" sys_domain="global" view="Default view">2048f57793e003105097fa845d03d694</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-06 10:06:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_2039551_enterp_0_cafeteria_menu</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-06 10:06:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2048f57793e003105097fa845d03d694</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2039551_enterp_0_cafeteria_menu</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+            <sys_update_name>sys_ui_section_2048f57793e003105097fa845d03d694</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-06 10:06:19</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</application>
+        <file_path/>
+        <instance_id>1185c62993240f98c4e8ddd548373cdc</instance_id>
+        <instance_name>dev394126</instance_name>
+        <name>sys_ui_section_2048f57793e003105097fa845d03d694</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New Section" section_id="2048f57793e003105097fa845d03d694" sys_domain="global" table="x_2039551_enterp_0_cafeteria_menu" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_string_3</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-06 10:06:21</sys_created_on><sys_id>0d48397793e003105097fa845d03d6d3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_2039551_enterp_0_cafeteria_menu" sys_domain="global" view="Default view">2048f57793e003105097fa845d03d694</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-06 10:06:21</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New Section</caption><header>false</header><name>x_2039551_enterp_0_cafeteria_menu</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-06 10:06:19</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2048f57793e003105097fa845d03d694</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_2039551_enterp_0_cafeteria_menu</sys_name><sys_overrides/><sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package><sys_policy/><sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope><sys_update_name>sys_ui_section_2048f57793e003105097fa845d03d694</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-06 10:06:19</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-497089101</payload_hash>
+        <record_name>CAFETERIA MENU</record_name>
+        <reverted_from/>
+        <source>edd5edbf932003105097fa845d03d6fa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 10:06:21</sys_created_on>
+        <sys_id>0148397793e003105097fa845d03d6d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dfcc0b7cf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 10:06:21</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>c14839774ee003109ef2fb469402f5d6</update_guid>
+        <update_guid_history>c14839774ee003109ef2fb469402f5d6:-497089101</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 10:08:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>02df2104ad3c428080eaf3b2ba514884</sys_id>
+        <sys_metadata>2048f57793e003105097fa845d03d694</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Section</sys_name>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_parent display_value="CAFETERIA MENU">1546f93393e003105097fa845d03d652</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_scope_delete display_value="">68f3f1efe85b45f78781bdb8dc404729</sys_scope_delete>
+        <sys_update_name>sys_ui_section_2048f57793e003105097fa845d03d694</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_2048f57793e003105097fa845d03d694">0148397793e003105097fa845d03d6d7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 10:08:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

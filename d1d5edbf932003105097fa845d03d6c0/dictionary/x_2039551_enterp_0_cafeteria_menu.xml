@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1546f93393e003105097fa845d03d652" label="CAFETERIA MENU" max_length="40" name="x_2039551_enterp_0_cafeteria_menu" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Availability Status" max_length="40" name="u_choice_6" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Limited" sequence="2" value="limited"/>
+                <element inactive_on_update="false" label="Available" sequence="0" value="available"/>
+                <element inactive_on_update="false" label="UnAvailable" sequence="1" value="unavailable"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Lunch" max_length="40" name="u_string_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Dinner" max_length="40" name="u_string_5" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Breakfast" max_length="40" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="u_glide_date_1" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Snacks" max_length="40" name="u_string_4" type="string"/>
+    </element>
+</database>

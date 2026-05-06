@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>i6r100gFjTiHYjBMe4fHMbk7HPqDvoIWEK4zN8GDyTU=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_2039551_enterp_0.onboarding_task_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>onboarding_task_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 10:06:10</sys_created_on>
+        <sys_id>0238717793e003105097fa845d03d6df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2039551_enterp_0.onboarding_task_user</sys_name>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name>sys_user_role_0238717793e003105097fa845d03d6df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 10:06:10</sys_updated_on>
+    </sys_user_role>
+</record_update>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="a20eb573932403105097fa845d03d63b" sys_domain="global" table="x_2039551_enterp_0_employee_issues_table" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-06 10:31:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>220eb573932403105097fa845d03d640</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2039551_enterp_0_employee_issues_table" name="x_2039551_enterp_0_employee_issues_table" sys_domain="global" view="Default view">a20eb573932403105097fa845d03d63b</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_2039551_enterp_0_employee_issues_table" sys_domain="global" view="Default view">efe9717b93e003105097fa845d03d6a2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-06 10:31:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-06 10:31:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>660eb573932403105097fa845d03d641</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2039551_enterp_0_employee_issues_table" name="x_2039551_enterp_0_employee_issues_table" sys_domain="global" view="Default view">a20eb573932403105097fa845d03d63b</sys_ui_form>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_2039551_enterp_0_employee_issues_table" sys_domain="global" view="Default view">d20eb573932403105097fa845d03d639</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-06 10:31:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_2039551_enterp_0_employee_issues_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-06 10:31:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a20eb573932403105097fa845d03d63b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2039551_enterp_0_employee_issues_table</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+            <sys_update_name>sys_ui_form_sections_a20eb573932403105097fa845d03d63b</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-06 10:31:35</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

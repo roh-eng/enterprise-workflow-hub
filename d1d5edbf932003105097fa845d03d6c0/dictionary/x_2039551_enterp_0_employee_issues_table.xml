@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="bb69313b93e003105097fa845d03d672" extends="task" label="EMPLOYEE ISSUES TABLE" max_length="40" name="x_2039551_enterp_0_employee_issues_table" type="collection">
+        <element label="Escalated" max_length="40" name="u_boolean_5" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Employee" max_length="32" name="u_reference_1" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="id card issue" label="Issue Type" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="VPN Issue" sequence="1" value="vpn issue"/>
+                <element inactive_on_update="false" label="Access Issue" sequence="2" value="access issue"/>
+                <element inactive_on_update="false" label="Laptop Issue" sequence="0" value="laptop issue"/>
+                <element inactive_on_update="false" label="ID Card Issue" sequence="3" value="id card issue"/>
+                <element inactive_on_update="false" label="Cafeteria Issue" sequence="4" value="cafeteria issue"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Resolution Notes" max_length="40" name="u_string_4" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Affected Department" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Facility" sequence="5" value="facility"/>
+                <element inactive_on_update="false" label="HR" sequence="1" value="hr"/>
+                <element inactive_on_update="false" label="QA" sequence="2" value="qa"/>
+                <element inactive_on_update="false" label="IT" sequence="0" value="it"/>
+                <element inactive_on_update="false" label="Security" sequence="3" value="security"/>
+                <element inactive_on_update="false" label="DevOps" sequence="4" value="devops"/>
+            </choice>
+        </element>
+    </element>
+</database>

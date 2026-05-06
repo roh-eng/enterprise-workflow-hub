@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="PERFORMANCE METRICS">f7b74a77936403105097fa845d03d6e4</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>PERFORMANCE METRICSs</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_2039551_enterp_0_performance_metrics</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_2039551_enterp_0.performance_metrics_user</roles>
+        <route/>
+        <screen/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 11:14:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>08c74a77936403105097fa845d03d6e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PERFORMANCE METRICSs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name>sys_app_module_08c74a77936403105097fa845d03d6e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 11:14:00</sys_updated_on>
+        <timeline_page/>
+        <title>PERFORMANCE METRICSs</title>
+        <uncancelable>false</uncancelable>
+        <ux_list/>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</application>
+        <file_path/>
+        <instance_id>1185c62993240f98c4e8ddd548373cdc</instance_id>
+        <instance_name>dev394126</instance_name>
+        <name>sys_app_module_08c74a77936403105097fa845d03d6e9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="PERFORMANCE METRICS">f7b74a77936403105097fa845d03d6e4</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>PERFORMANCE METRICSs</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_2039551_enterp_0_performance_metrics</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_2039551_enterp_0.performance_metrics_user</roles><route/><screen/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-06 11:14:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>08c74a77936403105097fa845d03d6e9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PERFORMANCE METRICSs</sys_name><sys_overrides/><sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package><sys_policy/><sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope><sys_update_name>sys_app_module_08c74a77936403105097fa845d03d6e9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-06 11:14:00</sys_updated_on><timeline_page/><title>PERFORMANCE METRICSs</title><uncancelable>false</uncancelable><ux_list/><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-350243456</payload_hash>
+        <record_name>PERFORMANCE METRICSs</record_name>
+        <reverted_from/>
+        <source>edd5edbf932003105097fa845d03d6fa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 11:14:00</sys_created_on>
+        <sys_id>c4c78a77936403105097fa845d03d606</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dfcfea7b80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 11:14:00</sys_updated_on>
+        <type>Module</type>
+        <update_guid>84c78a774c6403108198f092499dea05</update_guid>
+        <update_guid_history>84c78a774c6403108198f092499dea05:-350243456</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="PERFORMANCE METRICSs">ba48ceb7936403105097fa845d03d6fe</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 11:16:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>1e2f3f905bf04a2e84fea0a1dffcd849</sys_id>
+        <sys_metadata>08c74a77936403105097fa845d03d6e9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PERFORMANCE METRICSs</sys_name>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_scope_delete display_value="">68f3f1efe85b45f78781bdb8dc404729</sys_scope_delete>
+        <sys_update_name>sys_app_module_08c74a77936403105097fa845d03d6e9</sys_update_name>
+        <sys_update_version display_value="sys_app_module_08c74a77936403105097fa845d03d6e9">c4c78a77936403105097fa845d03d606</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 11:16:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
