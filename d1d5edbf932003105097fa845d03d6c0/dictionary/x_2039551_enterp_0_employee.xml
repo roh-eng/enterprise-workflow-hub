@@ -4,11 +4,17 @@
             <choice>
                 <element inactive_on_update="false" label="QA"/>
                 <element inactive_on_update="false" label="IT"/>
-                <element inactive_on_update="false" label="HR"/>
+                <element inactive_on_update="false" label="HR" sequence="0"/>
                 <element inactive_on_update="false" label="Security"/>
-                <element inactive_on_update="false" label="Facility"/>
-                <element inactive_on_update="false" label="DevOps"/>
+                <element inactive_on_update="false" label="DevOps" sequence="6" value="DevOps"/>
+                <element inactive_on_update="false" label="Security" sequence="4" value="Security"/>
+                <element inactive_on_update="false" label="Facility" sequence="2" value="Facility"/>
+                <element inactive_on_update="false" label="IT" sequence="0" value="IT"/>
+                <element inactive_on_update="false" label="DevOps" sequence="0"/>
                 <element inactive_on_update="false" label="Management"/>
+                <element inactive_on_update="false" label="Management" sequence="1" value="Management"/>
+                <element inactive_on_update="false" label="HR" sequence="5" value="HR"/>
+                <element inactive_on_update="false" label="QA" sequence="3" value="QA"/>
             </choice>
         </element>
         <element label="Phone Number" max_length="40" name="phone_number" type="string"/>
@@ -23,10 +29,10 @@
         <element label="Joining Date" max_length="40" name="joining_date" type="glide_date"/>
         <element choice="1" label="Status" max_length="40" name="status" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Rejected"/>
-                <element inactive_on_update="false" label="Pending"/>
+                <element inactive_on_update="false" label="Completed" sequence="0"/>
+                <element inactive_on_update="false" label="Completed" sequence="0"/>
+                <element inactive="true" inactive_on_update="true" label="Completed" sequence="0"/>
                 <element inactive_on_update="false" label="Completed"/>
-                <element inactive_on_update="false" label="Onboarding"/>
             </choice>
         </element>
         <element label="Address" max_length="40" name="address" type="string"/>

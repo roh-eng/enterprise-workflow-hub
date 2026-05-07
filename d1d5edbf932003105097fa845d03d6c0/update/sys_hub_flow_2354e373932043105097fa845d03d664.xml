@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4326000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>workflow_coordination_flow</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛WorkFlow Task Record","reference":"x_2039551_enterp_0_workflow_task","reference_display":"WorkFlow Task","type":"reference","base_type":"reference","usedInstances":{"6aeff4be-585c-4248-bdfc-38bdf0adf9c5":["u_reference_2"]},"attributes":{}},{"name":"Updated_1.changed_fields","label":"Trigger - Record Updated➛Changed Fields","type":"array.object","base_type":"array.object","usedInstances":{"6aeff4be-585c-4248-bdfc-38bdf0adf9c5":["short_description"]},"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}}]</label_cache>
+        <master_snapshot>8ce4f7bb93a043105097fa845d03d609</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Workflow Coordination Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>98e4f7bb93a043105097fa845d03d678</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 17:58:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2354e373932043105097fa845d03d664</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Workflow Coordination Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name>sys_hub_flow_2354e373932043105097fa845d03d664</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:48</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>24e4f7bb93a043105097fa845d03d6c0</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=2354e373932043105097fa845d03d664"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2354e373932043105097fa845d03d664"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_2039551_enterp_0_workflow_task">state=3^u_choice_3=coding<item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item display_value="Coding" endquery="false" field="u_choice_3" goto="false" newquery="false" operator="=" or="false" value="coding"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>98e4f7bb93a043105097fa845d03d678</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:48</sys_updated_on>
+        <table>x_2039551_enterp_0_workflow_task</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>2354e373932043105097fa845d03d664</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:48</sys_created_on>
+        <sys_id>dce4f7bb93a043105097fa845d03d679</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:48</sys_updated_on>
+        <trigger display_value="">98e4f7bb93a043105097fa845d03d678</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=2354e373932043105097fa845d03d664^sys_idNOT INdce4f7bb93a043105097fa845d03d679"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2354e373932043105097fa845d03d664"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2354e373932043105097fa845d03d664^sys_idNOT IN2b54e373932043105097fa845d03d665"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2354e373932043105097fa845d03d664</id>
+        <name>Workflow Coordination Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 17:58:40</sys_created_on>
+        <sys_id>2b54e373932043105097fa845d03d665</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 17:58:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=2b54e373932043105097fa845d03d665"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2354e373932043105097fa845d03d664^sys_idNOT IN7364ef7b932043105097fa845d03d681,8c74ef7b932043105097fa845d03d6ba,c074ef7b932043105097fa845d03d6a2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Workflow Coordination Flow">2354e373932043105097fa845d03d664</model>
+        <model_id>2354e373932043105097fa845d03d664</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2354e373932043105097fa845d03d664</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 17:58:57</sys_created_on>
+        <sys_id>7364ef7b932043105097fa845d03d681</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 18:07:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7364ef7b932043105097fa845d03d681"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Workflow Coordination Flow">2354e373932043105097fa845d03d664</model>
+        <model_id>2354e373932043105097fa845d03d664</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2354e373932043105097fa845d03d664</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 17:58:58</sys_created_on>
+        <sys_id>8c74ef7b932043105097fa845d03d6ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 17:58:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8c74ef7b932043105097fa845d03d6ba"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Workflow Coordination Flow">2354e373932043105097fa845d03d664</model>
+        <model_id>2354e373932043105097fa845d03d664</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2354e373932043105097fa845d03d664</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 17:58:58</sys_created_on>
+        <sys_id>c074ef7b932043105097fa845d03d6a2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 18:07:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c074ef7b932043105097fa845d03d6a2"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2354e373932043105097fa845d03d664"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2354e373932043105097fa845d03d664"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2354e373932043105097fa845d03d664^sys_idNOT IN3b64e37b93ec03105097fa845d03d6ea"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Workflow Coordination Flow">2354e373932043105097fa845d03d664</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 17:58:57</sys_created_on>
+        <sys_id>3b64e37b93ec03105097fa845d03d6ea</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:35</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2354e373932043105097fa845d03d664^sys_idNOT IN49c23f7793a043105097fa845d03d627,a1d3fbf793a043105097fa845d03d640,d824ff3b93a043105097fa845d03d63c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Workflow Coordination Flow">2354e373932043105097fa845d03d664</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:01:34</sys_created_on>
+        <sys_id>49c23f7793a043105097fa845d03d627</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:35</sys_updated_on>
+        <ui_id>6aeff4be-585c-4248-bdfc-38bdf0adf9c5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9FYNnwaAs2419C1Dk1gRt0/QQJwQtjmwilMiSlJca/vcOSclZ2gBBUaAoUN84y5v3Zsaj2wORgszJNAc6meXTssiLYkTp6GycL6fFMh+JggOMSUYaXgNGer5UwOIjIxuu2mDcsREtZpNJzqDxYA2jbKvtQ6X0lnnuHjBUSGcU3990GV/RfYHuwXVyl2uphIWGzG/vMmK4xQKIROaHFy6/N8AUX4JClOtAZnCZyLxVyLPkV4SFKi9t2opAiGYEdh4aAViv4spBRmreCO613ZO5ty0aLHBx1aj9KWItG4+AJMTunPyO6Gc0xFWA0kpIvtOTde1K5nKtZQlXxkvdJEsk1jm1auvmMokIjYaKt8r3jUZL6xAPTKAcSHSMqs9rvf3UF7yQTVTXOZUuuTq9uPdWLlsPLswDFNQIxGpujGxWzFi9kTEZudTDlcLHMI5egJOrZsjLQHyIHeLDMPP30XzDrQwqPiAMJh+jevatDXWTjo4xS6IxwJVWGn+OcBvoyB2zfoMF0Nmrg8+Xj4OOS+uebK9ba+sD2QiPVBctpYX4eD64BudR4n3L0ghYkVy+s3MXlMRurKxuTfIeFv22L8h8QSIOrxckW6SS0VrOKsGR6qzgmJPTCZ29q/jZeCIQYTquYrjbOybFG+OP98ZKbaXfJxojpP24UKOO2+GLwUGAYPmwbC36/PH489/zf0t++yRBjTI9DFIrszdvZw9wIUEJ94t17W9SV4BtugLdXcr/1F3KpzT+/s51Sjz/seP05Dvxypm6+wF0QMPTagcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=49c23f7793a043105097fa845d03d627"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Workflow Coordination Flow">2354e373932043105097fa845d03d664</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:06:14</sys_created_on>
+        <sys_id>a1d3fbf793a043105097fa845d03d640</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:35</sys_updated_on>
+        <ui_id>884a6524-620f-4487-9a79-2bca0dea7b0c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91UyW7bMBD9FYNnwaAsy7F9K1D41gRIjPQQpwQljmwi1FKS8lLD/94hKTlpWgNGUaBodeO8mTdvFs3TkUhB5mQSA01n8SRP4iQZUTqajuNskmTxSCQcYEwiUvES0NPyTAHzj4hsuWqdcc9GNJmlacygsqAbRtmu1i+FqnfMcvOCrkKaRvHDYxfxGeEFwoNlgPONVEJDReZPzxFpuMYEyETmx3eQPTTAFM9AIcvSiRncBjHXFvJD8IXCXJb3tloLJ4hGBPYWKgGYr+DKQERKXglua30gc6tbNGjg4q5Sh7PHRlYWCYnz3Rv5Ddmn1PkVgKXlELDzk3XtCuZ8U8sc7hor6ypYvLAOrFVbVrehCNdoKHirbN9otLQG+aBxkp2ITlHxsKl3933Chax8dR2o6pyr84tbq2XWWjBuHqCgRCJW8qaR1Zo1ut5KH4xayuFa4WPoRy/AyHU15LkTPsQO8aGb+UdvfuRauio+IQ0Gn3z17Gvr8oY6OsUsFI0OJteysR+QbguduFPUb7AAOrs4+Dh7HbRfWvNme82m1taJ9fQoddVSmogHyFst7WFwD1sJuy8tC3NgScBNj+uAc+PK8q1Z67ptgtdx1a/+isxX5Ey6BF6uSLQKKjyWjUYFT7NklnCMjGlKZzcFn45TgTyTyY13NwfDpLjS//Tzj/d/F/ubZwRK1GxhEJoUXb1RPcFCghLmFyvW35EuAdt2CbpbEv+pWxJPqP/+zkUJOv+xg/Lmtl84Lc/fAckcNgkeBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a1d3fbf793a043105097fa845d03d640"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Workflow Coordination Flow">2354e373932043105097fa845d03d664</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:07:31</sys_created_on>
+        <sys_id>d824ff3b93a043105097fa845d03d63c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:35</sys_updated_on>
+        <ui_id>07523440-e405-425c-a2d1-eed1805a9162</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91UTY/aMBD9K8jnCDkEKHCrhLh1kVq0PSxby4knYK0Tu7bDR9H+947jwG63RUJVparNzfPx5r2ZyTyciBRkRsYp0NE0HRdZmmUDSgeTYZqPszwdiIwDDElCal4BRnqeK2DtIyE7rppgPLABzaajUcqg9mANo2yv7VOp9J557p4wVEhnFD/edxmf0b1Ad28V3cVWKmGhJrOHx4QYbrEAIpHZ6Y3LHw0wxXNQiLIKZHp3kcytQn5IviIsVHlr01YEQjQhcPBQC8B6JVcOElLxWnCv7ZHMvG3QYIGLZa2Ol4itrD0CkhB7cPIbok9oiCsBpRUQfZcn69oVzcVWywKWxktdR0tLrHNq1VT1XRQRGg0lb5Q/NxotjUM8MIFyINExKj9t9f7jueBC1q26zql0wdXlxb23Mm88uDAPUFAhEKu4MbLeMGP1TrbJyKXqbxQ++u3oBTi5qfu8CMT72CHeDzOft+Z7bmVQ8QFhMPm5Vc++NqFu1NExZlE0BrjCSuPfI9wOOnLPyXmDBdDp1cGn+cug26V1r7bXbbX1gWwLj1TXDaWZmINR+hikfmlYHAHLoku8uLgLYtqGbKxuTAw4rc8LvyazNZnDbmlcbwW8WpNkHSu3HlpOSj4t82k2xryUjuj0Xcknw5FAlDEt23B3dEyKG+Off/7Z/j+Bv3kuoELGHnqxMcnNm3MGWEhQwv1ilc73oivAdl2B7makf+pmpNiU8P2dyxF5/mOH49UNv3JCHr8DEGCRRwYHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d824ff3b93a043105097fa845d03d63c"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2354e373932043105097fa845d03d664"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2354e373932043105097fa845d03d664"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2354e373932043105097fa845d03d664"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2354e373932043105097fa845d03d664"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2354e373932043105097fa845d03d664</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 17:58:58</sys_created_on>
+        <sys_id>0474ef7b932043105097fa845d03d6a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 17:58:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2354e373932043105097fa845d03d664</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 17:58:58</sys_created_on>
+        <sys_id>4874ef7b932043105097fa845d03d69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 17:58:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2354e373932043105097fa845d03d664</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 17:58:58</sys_created_on>
+        <sys_id>cc74ef7b932043105097fa845d03d6c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 17:58:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2354e373932043105097fa845d03d664"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2354e373932043105097fa845d03d664"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>workflow_coordination_flow</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛WorkFlow Task Record","reference":"x_2039551_enterp_0_workflow_task","reference_display":"WorkFlow Task","type":"reference","base_type":"reference","usedInstances":{"6aeff4be-585c-4248-bdfc-38bdf0adf9c5":["u_reference_2"]},"attributes":{}},{"name":"Updated_1.changed_fields","label":"Trigger - Record Updated➛Changed Fields","type":"array.object","base_type":"array.object","usedInstances":{"6aeff4be-585c-4248-bdfc-38bdf0adf9c5":["short_description"]},"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}}]</label_cache>
+        <master>true</master>
+        <name>Workflow Coordination Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Workflow Coordination Flow">2354e373932043105097fa845d03d664</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8ce4f7bb93a043105097fa845d03d609</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:47</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=8ce4f7bb93a043105097fa845d03d609"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8ce4f7bb93a043105097fa845d03d609"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8ce4f7bb93a043105097fa845d03d609"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8ce4f7bb93a043105097fa845d03d609^sys_idNOT INc4e4f7bb93a043105097fa845d03d60b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8ce4f7bb93a043105097fa845d03d609</id>
+        <name>Workflow Coordination Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:47</sys_created_on>
+        <sys_id>c4e4f7bb93a043105097fa845d03d60b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c4e4f7bb93a043105097fa845d03d60b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8ce4f7bb93a043105097fa845d03d609^sys_idNOT IN80e4f7bb93a043105097fa845d03d61e,cce4f7bb93a043105097fa845d03d60c,cce4f7bb93a043105097fa845d03d636"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Workflow Coordination Flow">8ce4f7bb93a043105097fa845d03d609</model>
+        <model_id>8ce4f7bb93a043105097fa845d03d609</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8ce4f7bb93a043105097fa845d03d609</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:47</sys_created_on>
+        <sys_id>80e4f7bb93a043105097fa845d03d61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=80e4f7bb93a043105097fa845d03d61e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Workflow Coordination Flow">8ce4f7bb93a043105097fa845d03d609</model>
+        <model_id>8ce4f7bb93a043105097fa845d03d609</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8ce4f7bb93a043105097fa845d03d609</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:47</sys_created_on>
+        <sys_id>cce4f7bb93a043105097fa845d03d60c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cce4f7bb93a043105097fa845d03d60c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Workflow Coordination Flow">8ce4f7bb93a043105097fa845d03d609</model>
+        <model_id>8ce4f7bb93a043105097fa845d03d609</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8ce4f7bb93a043105097fa845d03d609</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:47</sys_created_on>
+        <sys_id>cce4f7bb93a043105097fa845d03d636</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cce4f7bb93a043105097fa845d03d636"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8ce4f7bb93a043105097fa845d03d609"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8ce4f7bb93a043105097fa845d03d609"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8ce4f7bb93a043105097fa845d03d609^sys_idNOT IN58e4f7bb93a043105097fa845d03d65a"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Workflow Coordination Flow">8ce4f7bb93a043105097fa845d03d609</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:48</sys_created_on>
+        <sys_id>58e4f7bb93a043105097fa845d03d65a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:48</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8ce4f7bb93a043105097fa845d03d609^sys_idNOT IN58e4f7bb93a043105097fa845d03d657,d0e4f7bb93a043105097fa845d03d658,dce4f7bb93a043105097fa845d03d656"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Workflow Coordination Flow">8ce4f7bb93a043105097fa845d03d609</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:48</sys_created_on>
+        <sys_id>58e4f7bb93a043105097fa845d03d657</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:48</sys_updated_on>
+        <ui_id>884a6524-620f-4487-9a79-2bca0dea7b0c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91VTU8bMRD9K5HPq8ibJYHkVoFyakEiiB4IWLPr2cTC+1Hbm5BG/PeO17shoqBSqReam+e9Gb83O57c7ZmSbMYmMfLxNJ5kSZwkI85HZydxOknSeCQTQDxhESuhQGI6SDWK9hCxDejGB5/EiCfT8TgWWDo0teBiW5nHXFdb4cA+ElUqW2vY3XYZ3wmeEzy4CXC2VloaLNns7j5iNRi6gCqx2f4V9FG5GlLURL3xet+R73b1m7Gvx7mDywBURno9PGL45LCUSEJy0BYjVkApwVVmx2bONBQwCPKq1LsDY61KRwWZ5z5Z9ZOuPeOelyM5yzBgh6PouhXC+QU4WFDlzDWmo2brSmVoQ08k5tBod34cC4Sr2qmqDCmtzS670k1RXoaWsEOB/uNQpLEkAmvv0yvvbOSLdbW97lXOVdm2pAN1lYE+nMA5o9LGeT17hhoLKiQKqGtVrkRtqo1qk0lLMVxpOgzbcZFo1aocQuaFD6mtMPRzctGGb8Eo7+IblaHk54jZnT3XYO2LF2qi+NF4JcFZ50GENviUzKjafaELNtjJfY76dyCRT98drDh9GaR29O3RG7Dryjgvvy1P4pcN54lcYNYY5XaDa9wo3D40InwZkQTc9rgJOHkho22zVqZq6sDaL/sHtGSzJTsUvUEolixaBhUtlo5GOYzTZJoAZcZ8zKenOZydjCXVmUxOWzq1TSj5Qf7z78/3/zb7l8vozzPTL6O5Qi3tG0PUbyIsyLZDEYbq1TbqwMFtB3YbKf5XGyme8Pb3ifZSMPfp19LRP9A7C+r+FxlL+EOqBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=58e4f7bb93a043105097fa845d03d657"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Workflow Coordination Flow">8ce4f7bb93a043105097fa845d03d609</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:48</sys_created_on>
+        <sys_id>d0e4f7bb93a043105097fa845d03d658</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:48</sys_updated_on>
+        <ui_id>07523440-e405-425c-a2d1-eed1805a9162</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91VwW4aMRD9FeTzCnlZoMCtCsqpTaQmooeQWN71LFjxrl3bS6CIf+94vRCUJmoq9ZJy87w34/dmx8PdnkhBZmScAh1N03GRpVk2oHQwGab5OMvTgcg4wJAkpOYVINPzXAFrDwnZcNWE4JYNaDYdjVIGtQdrGGVP2j6WSj8xz90jUoV0RvHdosv4jvAlwr3bCBdrqYSFmszu7hNiuMULsBKZ7V9A75WreA4KqbdB7xvy/c68Gvtyntu7ioC2IuihCYGth1oACim5cpCQiteCe213ZOZtgwELXFzXandirGXtsSAJ3K2TP/HaCQ28EtBZARE7HVnXrRgu59zzG6xc+MZ21GKtZQEu9kRAyRvlL85jkXBtvNR1TGltdtlaNVV9FVtCTgWOHwcjjUMRYILPoLyzUd6s9dO3o8pLWbct6UClC65OJ+69lXnjg549AQUVFmIVN0bWK2as3sg2GbVU/ZXCQ78dFwFOruo+L4LwPraV98OczNvwglsZXHzFMph8SIjbuQvFnXv2gk1kP5qgJDrrPLDYhpBSWGn8Z7xgA53cQ3J8BwLo9M3BSvPnQWpH3529AbfW1gf5bXkUv2wozcQcjNK7YP6hYfGjsCxC4hlCB2ivbdHK6sZEwn55fDZLMluSOWyujevdAq+WJFnGm1uElpOST8t8mo0xL6UjOv1U8slwJLDKmJYtHVvFpHgn//D7k/3/DP7l0vnzbByXzqUEJdwrw3LcOFChaQ8sDs+LrdOBvUUHdpsn/VebJ8WehN8H2j/R3IdfP2f/NG8sovtfHndmIJIHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d0e4f7bb93a043105097fa845d03d658"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Workflow Coordination Flow">8ce4f7bb93a043105097fa845d03d609</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:48</sys_created_on>
+        <sys_id>dce4f7bb93a043105097fa845d03d656</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:48</sys_updated_on>
+        <ui_id>6aeff4be-585c-4248-bdfc-38bdf0adf9c5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTU8bMRD9K5HPq8ibTVKSGwJxakEtlB4IWM56NrHw7rq2F0ij/PeOP/IhPlQq9YLU3DxvZvze2/HkZk2kIFMyzoGOJvm4LPKiGFA6OBrm83Exzwei4ABDkpGG14CZjs8VsHDIyANXnQ8+sQEtJqNRzqBxYDSj7LE195VqH5nj9h5ThbRa8dV1qviB8BnCvasIl0uphIGGTG9uM6K5wQuwE5mun0Hvpav4HBSmXnm+b9B3K/1q7PNhbe88Aq0Rng/NCDw5aAQgkYorCxmpeSO4a82KTJ3pMGCAi4tGrXYZS9k4bEh87pOVv/DaI+rzKkBlJURsd2TJrRiuTrnjl9i5dJ1JqeWylSXY6ImAinfKnRzGYsKFdrJtYkmQmapb1dXNebSE7BpsPw5GOoskQHudnnmSUV0u28dvW5ZnsgmWJFC1JVe7E3fOyHnnPJ81AQU1NmI111o2C6ZN+yBDMXKp+wuFh34YFwFWLpo+Lz3xPtrK+35OTkP4mhvpVXzBNli8yYhd2RPFrd1rQRPZz84zicqSBhZt8CWlkdod4wUPkOhusu07EEAnbw5WPt8PUhh9e/AG7LI1ztMP7ZH8rKO0EF+Pe1dgHYq+61j8KKyIkEtxpI/agj8L03Y6ouvZ9s3MyHRGQh9ez0g2i1eGaDmpBEeqk4JjTU5HdPKp4kfDkcAO42EV0tEjJsU78zd32sjWSLeKNAZIez+Xg8Rt/V3jpwHB8n7ZGcTcZvPykf+35K8X25/nb7vYziQoYV8ZyO1WgxqdcsDigD7bbAnsXScwbbf8X223fEzD7wPtuCjuw6+4g3+zN5bd7W+wr8wb9gcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dce4f7bb93a043105097fa845d03d656"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8ce4f7bb93a043105097fa845d03d609"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8ce4f7bb93a043105097fa845d03d609"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8ce4f7bb93a043105097fa845d03d609"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8ce4f7bb93a043105097fa845d03d609"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8ce4f7bb93a043105097fa845d03d609</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:47</sys_created_on>
+        <sys_id>08e4f7bb93a043105097fa845d03d619</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8ce4f7bb93a043105097fa845d03d609</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:47</sys_created_on>
+        <sys_id>44e4f7bb93a043105097fa845d03d632</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8ce4f7bb93a043105097fa845d03d609</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:47</sys_created_on>
+        <sys_id>c8e4f7bb93a043105097fa845d03d64a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Workflow Hub" source="x_2039551_enterp_0">d1d5edbf932003105097fa845d03d6c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Workflow Hub">d1d5edbf932003105097fa845d03d6c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8ce4f7bb93a043105097fa845d03d609"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8ce4f7bb93a043105097fa845d03d609"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>2354e373932043105097fa845d03d664</sys_id>
+        <latest_snapshot>8ce4f7bb93a043105097fa845d03d609</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2354e373932043105097fa845d03d664^sys_idNOT IN98e4f7bb93a043105097fa845d03d67c"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>2354e373932043105097fa845d03d664</plan_id>
+        <snapshot>8ce4f7bb93a043105097fa845d03d609</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 19:10:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>98e4f7bb93a043105097fa845d03d67c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 19:10:48</sys_updated_on>
+        <trigger display_value="">98e4f7bb93a043105097fa845d03d678</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=2354e373932043105097fa845d03d664"/>
+</record_update>
